@@ -4,6 +4,7 @@
 outputs
 *.bin
 checkpoints
+checkpoints
 data/
 results/
 incremental_results/
