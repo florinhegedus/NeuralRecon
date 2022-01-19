@@ -1,12 +1,12 @@
 DATASET: 'scannet'
 BATCH_SIZE: 2
 SAVE_SCENE_MESH: True
-LOGDIR: './checkpoints'
+LOGDIR: './checkpoints_'
 SAVE_FREQ: 1
 MODE: 'test'
 
 TRAIN:
-  PATH: 'data/scannet'
+  PATH: '/mnt/e/licenta/NeuralRecon/ScanNet/'
   EPOCHS: 991
   N_VIEWS: 9
   LR: 1e-3
@@ -14,7 +14,7 @@ TRAIN:
   LREPOCHS: '12,24,48:2'
 
 TEST:
-  PATH: 'data/scannet'
+  PATH: '/mnt/e/licenta/NeuralRecon/ScanNet/'
   N_VIEWS: 9
   N_WORKERS: 4
 
