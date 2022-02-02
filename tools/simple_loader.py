@@ -47,5 +47,8 @@ class ScanNetDataset(torch.utils.data.Dataset):
         color_image = cv2.cvtColor(cv2.imread(os.path.join(self.data_path, self.scene, "color", str(id) + ".jpg")),
                                    cv2.COLOR_BGR2RGB)
         color_image = cv2.resize(color_image, (depth_im.shape[1], depth_im.shape[0]), interpolation=cv2.INTER_AREA)
+        
+        #resize
+        #color_image = cv2.resize(color_image, (color_image.shape[1], color_image.shape[0]) , interpolation=cv2.INTER_AREA)
 
         return cam_pose, depth_im, color_image

@@ -1,27 +1,27 @@
 DATASET: 'scannet'
-BATCH_SIZE: 1
+BATCH_SIZE: 2
 SAVE_SCENE_MESH: False
 LOGDIR: './checkpoints_'
 SAVE_FREQ: 1
 MODE: 'train'
 
 TRAIN:
-  PATH: '/mnt/e/licenta/NeuralRecon/ScanNet/'
-  EPOCHS: 2
+  PATH: '/mnt/g/ScanNet/'
+  EPOCHS: 5
   N_VIEWS: 9
   LR: 1e-3
   N_WORKERS: 1
   LREPOCHS: '12,24,48:2'
 
 TEST:
-  PATH: '/mnt/e/licenta/NeuralRecon/ScanNet/'
+  PATH: '/mnt/g/ScanNet/'
   N_VIEWS: 9
   N_WORKERS: 4
 
 MODEL:
   N_LAYER: 3
-  N_VOX: [96, 96, 96]
-  VOXEL_SIZE: 0.04
+  N_VOX: [48, 48, 48] # initial: 96
+  VOXEL_SIZE: 0.16 #initial: 0.04
   TRAIN_NUM_SAMPLE: [4096, 16384, 65536]
   TEST_NUM_SAMPLE: [4096, 16384, 65536]
 

@@ -1,0 +1,4 @@
+(640, 480), voxel_size = 4cm, num_voxels = 96, num_views = 9 ---> 17 min (total=17h)
+(640, 480), voxel_size = 4cm, num_voxels = 48, num_views = 9 ---> 12 min (total=12h)
+(640, 480), voxel_size = 8cm, num_voxels = 48, num_views = 9 ---> 9.5 min (total=9.5h) 
+(320, 240), voxel_size = 8cm, num_voxels = 48, num_views = 9 ---> 9.5 min (total=9.5h) 

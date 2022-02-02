@@ -102,7 +102,7 @@ else:
     paddingZ = 0
 
 transform = []
-transform += [transforms.ResizeImage((640, 480)),
+transform += [transforms.ResizeImage((640, 480)), #initial (640, 480)
               transforms.ToTensor(),
               transforms.RandomTransformSpace(
                   cfg.MODEL.N_VOX, cfg.MODEL.VOXEL_SIZE, random_rotation, random_translation,
